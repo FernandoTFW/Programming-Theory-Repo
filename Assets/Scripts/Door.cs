@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : Interactable
+public class Door : Interactable// INHERITANCE
 {
 
-    public Animator AnimatorProp;
-
-    public override void Interact()
+    public override void Interact()// POLYMORPHISM
     {
         if (AnimatorProp.GetBool("opened"))
             AnimatorProp.SetBool("opened", false);

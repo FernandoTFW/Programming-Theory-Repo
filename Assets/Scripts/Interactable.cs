@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour
+
+// ABSTRACTION
+public abstract class Interactable : MonoBehaviour 
 {
-   public abstract void Interact();
+    protected Animator AnimatorProp;
+    public abstract void Interact(); // ABSTRACTION
 }

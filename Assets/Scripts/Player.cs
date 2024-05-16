@@ -6,12 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float speed = 5.0f;
     [SerializeField] float interactRadius = 2f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public string Name { get; set; } //ENCAPSULATION
     // Update is called once per frame
     void Update()
     {
